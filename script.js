@@ -7,19 +7,19 @@ const girlHearts = girl.querySelector(".hearts");
 
 flames.forEach((flame) => {
   flame.addEventListener("click", () => {
-
     flame.style.animation = "none";
     flame.style.opacity = "0";
 
+    // Show smoke
     const smoke = flame.parentElement.querySelector(".smoke");
     smoke.style.opacity = "1";
 
-    
+    // Show the text after smoke animation
     setTimeout(() => {
       smokeText.style.opacity = "1";
     }, 1000);
 
-    // Move the rose to the girl...
+    // Move the rose to the girl
     setTimeout(() => {
       const rose = boy.querySelector(".rose");
       rose.style.opacity = "0"; 
