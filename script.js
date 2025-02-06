@@ -14,7 +14,7 @@ flames.forEach((flame) => {
     const smoke = flame.parentElement.querySelector(".smoke");
     smoke.style.opacity = "1";
 
-    /
+    
     setTimeout(() => {
       smokeText.style.opacity = "1";
     }, 1000);
